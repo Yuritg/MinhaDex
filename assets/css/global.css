@@ -1,0 +1,51 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+#pmodal::backdrop{
+background-color: rgb(0 0 0 / .5)
+}
+
+#pmodal{
+    border-radius:  .5rem;
+    border-color: black;
+    width: 60%;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+#detailsModal{
+    display: flex;
+    flex-direction: row;
+}
+#btnModalClose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
